@@ -10,8 +10,8 @@ app.use(express.json());
 
 
 
-const authRoutes = require('./routes/auth');
-const notesRoutes = require('./routes/notes');
+const authRoutes = require('./routes/auth.js');
+const notesRoutes = require('./routes/nodes.js');
 
 app.use('/api/auth', authRoutes);
 app.use('/api/notes', notesRoutes);

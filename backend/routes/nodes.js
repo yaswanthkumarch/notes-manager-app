@@ -1,10 +1,10 @@
 // backend/routes/notes.js
 const express = require('express');
 const router = express.Router();
-const auth = require('../middleware/authMiddleware');
+const auth = require('../middleware/authMiddleware.js');
 const {
   createNote, getNotes, updateNote, deleteNote
-} = require('../controllers/notesController');
+} = require('../controllers/notesController.js');
 
 
 

@@ -1,5 +1,5 @@
 // backend/controllers/notesController.js
-const Note = require('../models/Note');
+const Note = require('../models/Note.js');
 
 exports.createNote = async (req, res) => {
   try {
