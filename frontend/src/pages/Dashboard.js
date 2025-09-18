@@ -15,7 +15,7 @@ const Dashboard = () => {
 
   const fetchNotes = async () => {
     try {
-      const res = await axios.get('http://localhost:5000/api/notes', {
+      const res = await axios.get('https://notes-manager-app.onrender.com/api/notes', {
         headers: { Authorization: token },
       });
       setNotes(res.data);
@@ -33,12 +33,12 @@ const Dashboard = () => {
     e.preventDefault();
     try {
       if (editId) {
-        await axios.put(`http://localhost:5000/api/notes/${editId}`, { title, description: desc }, {
+        await axios.put(`https://notes-manager-app.onrender.com/api/notes/${editId}`, { title, description: desc }, {
           headers: { Authorization: token },
         });
         setEditId(null);
       } else {
-        await axios.post('http://localhost:5000/api/notes', { title, description: desc }, {
+        await axios.post('https://notes-manager-app.onrender.com/api/notes', { title, description: desc }, {
           headers: { Authorization: token },
         });
       }
@@ -58,7 +58,7 @@ const Dashboard = () => {
 
   const handleDelete = async (id) => {
     try {
-      await axios.delete(`http://localhost:5000/api/notes/${id}`, {
+      await axios.delete(`https://notes-manager-app.onrender.com/api/notes/${id}`, {
         headers: { Authorization: token },
       });
       fetchNotes();
