@@ -1,0 +1,89 @@
+/* Dashboard.css */
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: sans-serif;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+  gap: 10px;
+  background-color: #f7f7f7;
+  padding: 15px;
+  border-radius: 6px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input, textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+button {
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.logout-btn {
+  float: right;
+  margin-bottom: 20px;
+  background-color: #dc3545;
+}
+
+.logout-btn:hover {
+  background-color: #c82333;
+}
+
+.note {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 15px;
+  margin-bottom: 15px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.note h3 {
+  margin: 0 0 10px;
+}
+
+.note p {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.note button {
+  margin-right: 10px;
+  background-color: #28a745;
+}
+
+.note button:hover {
+  background-color: #218838;
+}
+
+.note .delete-btn {
+  background-color: #dc3545;
+}
+
+.note .delete-btn:hover {
+  background-color: #c82333;
+}
